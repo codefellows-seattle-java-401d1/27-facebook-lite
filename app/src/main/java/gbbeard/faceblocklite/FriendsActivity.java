@@ -33,6 +33,7 @@ public class FriendsActivity extends AppCompatActivity {
         mButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                
                 Intent intent = new Intent(FriendsActivity.this, FriendDetailActivity.class);
                 startActivity(intent);
             }
