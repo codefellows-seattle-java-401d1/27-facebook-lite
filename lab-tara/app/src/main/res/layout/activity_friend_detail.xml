@@ -11,10 +11,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <TextView
+            android:id="@+id/friend_name"
             android:text="Friend name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
         <TextView
+            android:id="@+id/friend_bio"
             android:text="Friend bio"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />

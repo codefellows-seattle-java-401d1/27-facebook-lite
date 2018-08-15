@@ -8,8 +8,6 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-
-//    public static final int REQUEST_CHOOSE_FRIEND = 1;
     private TextView intro;
     private Button seeFriends;
 
@@ -31,11 +29,4 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
-//    @Override
-//    public void onClick(View view) {
-//        Intent intent = new Intent(MainActivity.this, FriendsActivity.class);
-//        startActivityForResult(intent, REQUEST_CHOOSE_FRIEND);
-//    }
-
 }

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/choices"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -16,13 +17,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <TextView
-                android:text="Brandon"
+                android:text="Katy Perry"
                 android:textAlignment="center"
                 android:layout_weight="1"
                 android:layout_width="0sp"
                 android:layout_height="wrap_content" />
             <Button
-                android:id="@+id/brandon"
+                android:id="@+id/katy"
                 android:text="More"
                 android:layout_weight="1"
                 android:layout_width="0sp"
@@ -33,13 +34,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <TextView
-                android:text="Luther"
+                android:text="Justin Bieber"
                 android:textAlignment="center"
                 android:layout_weight="1"
                 android:layout_width="0sp"
                 android:layout_height="wrap_content" />
             <Button
-                android:id="@+id/luther"
+                android:id="@+id/justin"
                 android:text="More"
                 android:layout_weight="1"
                 android:layout_width="0sp"
@@ -50,13 +51,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <TextView
-                android:text="Nick"
+                android:text="Barack Obama"
                 android:textAlignment="center"
                 android:layout_weight="1"
                 android:layout_width="0sp"
                 android:layout_height="wrap_content" />
             <Button
-                android:id="@+id/nick"
+                android:id="@+id/barack"
                 android:text="More"
                 android:layout_weight="1"
                 android:layout_width="0sp"
@@ -67,13 +68,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <TextView
-                android:text="Paul"
+                android:text="Rihanna"
                 android:textAlignment="center"
                 android:layout_weight="1"
                 android:layout_width="0sp"
                 android:layout_height="wrap_content" />
             <Button
-                android:id="@+id/paul"
+                android:id="@+id/rihanna"
                 android:text="More"
                 android:layout_weight="1"
                 android:layout_width="0sp"
@@ -84,13 +85,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <TextView
-                android:text="Tyler"
+                android:text="Taylor Swift"
                 android:textAlignment="center"
                 android:layout_weight="1"
                 android:layout_width="0sp"
                 android:layout_height="wrap_content" />
             <Button
-                android:id="@+id/tyler"
+                android:id="@+id/taylor"
                 android:text="More"
                 android:layout_weight="1"
                 android:layout_width="0sp"
