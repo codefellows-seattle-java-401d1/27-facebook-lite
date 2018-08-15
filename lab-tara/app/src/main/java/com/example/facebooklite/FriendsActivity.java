@@ -41,9 +41,16 @@ public class FriendsActivity extends AppCompatActivity {
             }
         });
 
-//        Intent intent = getIntent();
-
         mBrandon = findViewById(R.id.brandon);
+        mBrandon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(FriendsActivity.this, FriendDetailActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
         mLuther = findViewById(R.id.luther);
         mNick = findViewById(R.id.nick);
         mPaul = findViewById(R.id.paul);
