@@ -37,3 +37,5 @@ public class FriendDetailActivity extends AppCompatActivity {
         });
     }
 }
+
+// this page was the hardest. getting one activity to update with different content is still so abstract for me.
