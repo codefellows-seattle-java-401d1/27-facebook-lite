@@ -34,12 +34,4 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
-//    // This is missing something but not sure what...? <!--How to fix override-->
-//    @Override
-//    public void onClick(View view) {
-//        Intent intent = new Intent(MainActivity.this, FriendsActivity.class);
-//        startActivityForResult(intent, REQUEST_CHOOSE_FRIEND);
-//    }
-
 }

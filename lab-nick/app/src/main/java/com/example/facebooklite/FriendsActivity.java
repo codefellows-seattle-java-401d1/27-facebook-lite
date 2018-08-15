@@ -33,7 +33,7 @@ public class FriendsActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.friends_activity);
 
-        mBack = findViewById(R.id.back); //Why is this not working?
+        mBack = findViewById(R.id.back);
 
         mBack.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -42,6 +42,14 @@ public class FriendsActivity extends AppCompatActivity{
             }
         });
 
+        mBrandiboi = findViewById(R.id.brandiboi);
+        mBrandiboi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(FriendsActivity.this, FriendDetailActivity.class);
+                startActivity(intent);
+            }
+        });
 
         mTyler = findViewById(R.id.tyler);
         mPaul = findViewById(R.id.paul);
