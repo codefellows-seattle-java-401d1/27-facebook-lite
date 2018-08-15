@@ -9,6 +9,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
+//    public static final int REQUEST_CHOOSE_FRIEND = 1;
     private TextView intro;
     private Button seeFriends;
 
@@ -22,7 +23,19 @@ public class MainActivity extends AppCompatActivity {
 
         // Buttons
         seeFriends = findViewById(R.id.seeFriends);
+        seeFriends.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, FriendsActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
+//    @Override
+//    public void onClick(View view) {
+//        Intent intent = new Intent(MainActivity.this, FriendsActivity.class);
+//        startActivityForResult(intent, REQUEST_CHOOSE_FRIEND);
+//    }
 
 }

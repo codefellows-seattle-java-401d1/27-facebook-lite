@@ -10,7 +10,7 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">\
+        android:layout_height="match_parent">
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
@@ -96,6 +96,11 @@
                 android:layout_width="0sp"
                 android:layout_height="wrap_content" />
         </LinearLayout>
+        <Button
+            android:id="@+id/back"
+            android:text="Back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
     </LinearLayout>
 
 

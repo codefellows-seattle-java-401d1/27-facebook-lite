@@ -17,6 +17,8 @@ public class FriendsActivity extends AppCompatActivity {
     private Button mPaul;
     private Button mTyler;
 
+    private Button mBack;
+
     // Create a Friend array
     Friend[] friends = {
             new Friend("Brandon", "Brandon's bio"),
@@ -31,13 +33,22 @@ public class FriendsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.friends_activity);
 
-        Intent intent = getIntent();
+        mBack = findViewById(R.id.back);
+        mBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
+
+//        Intent intent = getIntent();
 
         mBrandon = findViewById(R.id.brandon);
         mLuther = findViewById(R.id.luther);
         mNick = findViewById(R.id.nick);
         mPaul = findViewById(R.id.paul);
         mTyler = findViewById(R.id.tyler);
+
     }
 
 }
