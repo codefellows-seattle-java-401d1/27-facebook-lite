@@ -1,5 +1,6 @@
 package com.android.sooz.friendsapp;
 
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -43,6 +44,8 @@ public class FriendActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_friend);
+
+        Intent intent = getIntent();
 //
         button = findViewById(R.id.friendButton1);
 
@@ -51,7 +54,7 @@ public class FriendActivity extends AppCompatActivity {
     }
 
 
-    //creates single project page/view within app
+    //creates list of fir
     public void showFriends(){
         int currentIndex = 0;
 

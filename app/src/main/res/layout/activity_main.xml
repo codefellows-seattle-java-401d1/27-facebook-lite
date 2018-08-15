@@ -37,14 +37,13 @@
             <!--Click to new view view-->
             <Button
                 android:id="@+id/goToFriends"
-                android:layout_weight="1"
-                android:layout_marginTop="40sp"
-                android:text="See our friends"
-                android:textSize="24sp"
-                android:textColor="@color/colorPrimaryDark"
-                android:layout_height="wrap_content"
                 android:layout_width="0sp"
-                />
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40sp"
+                android:layout_weight="1"
+                android:text="see our friends"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="24sp" />
 
         </LinearLayout>
 
