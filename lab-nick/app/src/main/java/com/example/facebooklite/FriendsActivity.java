@@ -8,6 +8,8 @@ import android.widget.Button;
 
 import com.example.facebooklite.models.Friend;
 
+import static com.example.facebooklite.MainActivity.REQUEST_CHOOSE_FRIEND;
+
 public class FriendsActivity extends AppCompatActivity{
 
     private Button mTyler;
@@ -15,6 +17,7 @@ public class FriendsActivity extends AppCompatActivity{
     private Button mLuther;
     private Button mBrandiboi;
     private Button mTara;
+    private Button mBack;
 
     //Creating an array of Friends named friends.
     Friend[] friends = {
@@ -30,15 +33,20 @@ public class FriendsActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.friends_activity);
 
-        Intent intent = getIntent();
+        mBack = findViewById(R.id.back); //Why is this not working?
+
+        mBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
+
 
         mTyler = findViewById(R.id.tyler);
         mPaul = findViewById(R.id.paul);
         mLuther = findViewById(R.id.luther);
         mBrandiboi = findViewById(R.id.brandiboi);
         mTara = findViewById(R.id.tara);
-
     }
-
-
 }

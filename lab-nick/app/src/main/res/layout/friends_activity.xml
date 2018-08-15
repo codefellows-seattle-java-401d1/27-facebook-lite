@@ -6,113 +6,124 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:padding="10sp"
     tools:context=".MainActivity">
-<LinearLayout
-    android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <TextView
-            android:textAlignment="center"
-            android:text="Tyler"
-            android:layout_weight="1"
-            android:layout_width="0sp"
-            android:layout_height="wrap_content" />
-
-        <Button
-            android:id="@+id/tyler"
-            android:text="More"
-            android:layout_weight="1"
-            android:layout_width="0sp"
-            android:layout_height="wrap_content"
-            app:layout_constraintLeft_toRightOf="@+id/tylerText"/>
-    </LinearLayout>
 
     <LinearLayout
-        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="205dp">
 
-        <TextView
-            android:textAlignment="center"
-            android:text="Paul"
-            android:layout_weight="1"
-            android:layout_width="0sp"
-            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Tyler"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/tyler"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="More"
+                app:layout_constraintLeft_toRightOf="@+id/tylerText" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Paul"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/paul"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="More"
+                app:layout_constraintLeft_toRightOf="@+id/tylerText" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Luther"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/luther"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="More"
+                app:layout_constraintLeft_toRightOf="@+id/tylerText" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Brandiboi"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/brandiboi"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="More"
+                app:layout_constraintLeft_toRightOf="@+id/tylerText" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Tara"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/tara"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="More"
+                app:layout_constraintLeft_toRightOf="@+id/tylerText" />
+        </LinearLayout>
 
         <Button
-            android:id="@+id/paul"
-            android:text="More"
-            android:layout_weight="1"
-            android:layout_width="0sp"
-            android:layout_height="wrap_content"
-            app:layout_constraintLeft_toRightOf="@+id/tylerText"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <TextView
+            android:id="@+id/back"
             android:textAlignment="center"
-            android:text="Luther"
-            android:layout_weight="1"
-            android:layout_width="0sp"
-            android:layout_height="wrap_content" />
-
-        <Button
-            android:id="@+id/luther"
-            android:text="More"
-            android:layout_weight="1"
-            android:layout_width="0sp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constraintLeft_toRightOf="@+id/tylerText"/>
+            android:text="Back" />
     </LinearLayout>
-
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <TextView
-            android:textAlignment="center"
-            android:text="Brandiboi"
-            android:layout_weight="1"
-            android:layout_width="0sp"
-            android:layout_height="wrap_content" />
-
-        <Button
-            android:id="@+id/brandiboi"
-            android:text="More"
-            android:layout_weight="1"
-            android:layout_width="0sp"
-            android:layout_height="wrap_content"
-            app:layout_constraintLeft_toRightOf="@+id/tylerText"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <TextView
-            android:textAlignment="center"
-            android:text="Tara"
-            android:layout_weight="1"
-            android:layout_width="0sp"
-            android:layout_height="wrap_content" />
-
-        <Button
-            android:id="@+id/tara"
-            android:text="More"
-            android:layout_weight="1"
-            android:layout_width="0sp"
-            android:layout_height="wrap_content"
-            app:layout_constraintLeft_toRightOf="@+id/tylerText"/>
-    </LinearLayout>
-</LinearLayout>
 </android.support.constraint.ConstraintLayout>
