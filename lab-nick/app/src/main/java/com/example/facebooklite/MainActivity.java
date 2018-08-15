@@ -25,12 +25,26 @@ public class MainActivity extends AppCompatActivity {
         // Creating our buttons
         seeFriends = findViewById(R.id.seeFriends);
 
+        // This is missing something but not sure what...? <!--How to fix override-->
         @Override
         public void onClick(View view) {
             Intent intent = new Intent(MainActivity.this, FriendsActivity.class);
             startActivityForResult(intent, REQUEST_CHOOSE_FRIEND);
         }
+
+        // Don't know if we actually need this for our current app needs?
+        @Override
+        public void onActivityResult(int requestCode, int resultCode, Intent data) {
+            if (resultCode != RESULT_OK) {
+                reset();
+                return;
+            }
+            if (requestCode == REQUEST_CHOOSE_FRIEND) {
+                if (data == null) {
+                    reset();
+                    return;
+                }
+            }
+        }
     }
-
-
 }
