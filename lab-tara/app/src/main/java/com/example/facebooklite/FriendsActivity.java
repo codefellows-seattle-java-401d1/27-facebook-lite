@@ -21,17 +21,23 @@ public class FriendsActivity extends AppCompatActivity {
 
     // Create a Friend array
     Friend[] friends = {
-            new Friend("Katy Perry", "placeholderbio"),
-            new Friend("Justin Bieber", "placeholderbio"),
-            new Friend("Barack Obama", "placeholderbio"),
-            new Friend("Rihanna", "placeholderbio"),
-            new Friend("Taylor Swift", "placeholderbio")
+            new Friend("placeholdername", "placeholderbio"),
+            new Friend("placeholdername", "placeholderbio"),
+            new Friend("placeholdername", "placeholderbio"),
+            new Friend("placeholdername", "placeholderbio"),
+            new Friend("placeholdername", "placeholderbio")
     };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.friends_activity);
+
+        friends[0].name = getString(R.string.katy_name);
+        friends[1].name = getString(R.string.justin_name);
+        friends[2].name = getString(R.string.barack_name);
+        friends[3].name = getString(R.string.rihanna_name);
+        friends[4].name = getString(R.string.taylor_name);
 
         friends[0].bio = getString(R.string.katy_bio);
         friends[1].bio = getString(R.string.justin_bio);

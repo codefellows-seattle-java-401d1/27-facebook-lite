@@ -7,4 +7,9 @@
     <string name="barack_bio">Dad, husband, President, citizen.</string>
     <string name="rihanna_bio">ProFilter Foundation back in stock @fentybeauty at https://t.co/6HarIz1NrP !!</string>
     <string name="taylor_bio">The old Taylor can\'t come to the phone right now.</string>
+    <string name="katy_name">Katy Perry</string>
+    <string name="justin_name">Justin Bieber</string>
+    <string name="barack_name">Barack Obama</string>
+    <string name="rihanna_name">Rihanna</string>
+    <string name="taylor_name">Taylor Swift</string>
 </resources>
