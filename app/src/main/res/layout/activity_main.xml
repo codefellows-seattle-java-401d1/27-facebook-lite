@@ -1,18 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <!--general application view-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    android:orientation="vertical"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_width="match_parent"
+    android:layout_margin="10sp">
 
+    <!--text layout view-->
+    <!--Got some help from StackOverflow to figure out how to show image-->
+    <!--https://stackoverflow.com/questions/28113484/how-do-i-insert-an-image-in-an-activity-with-android-studio-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/apartment_cats"
+        android:layout_marginBottom="20sp"
+        android:layout_marginTop="15sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/apartment_cats"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="@string/welcome"
+        android:textSize="30sp"
+        android:paddingTop="40sp"/>
 
-</android.support.constraint.ConstraintLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!--Click to new view view-->
+            <Button
+                android:id="@+id/goToFriends"
+                android:layout_weight="1"
+                android:layout_marginTop="40sp"
+                android:text="See our friends"
+                android:textSize="24sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_height="wrap_content"
+                android:layout_width="0sp"
+                />
+
+        </LinearLayout>
+
+</LinearLayout>
