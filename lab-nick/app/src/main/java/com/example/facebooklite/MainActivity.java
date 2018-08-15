@@ -10,7 +10,7 @@ import android.widget.TextView;
 import com.example.facebooklite.models.Friend;
 
 public class MainActivity extends AppCompatActivity {
-    public static final int REQUEST_CHOOSE_FRIEND = 1;
+
     private TextView intro;
     private Button seeFriends;
 

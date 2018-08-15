@@ -8,8 +8,6 @@ import android.widget.Button;
 
 import com.example.facebooklite.models.Friend;
 
-import static com.example.facebooklite.MainActivity.REQUEST_CHOOSE_FRIEND;
-
 public class FriendsActivity extends AppCompatActivity{
 
     private Button mTyler;
@@ -21,11 +19,11 @@ public class FriendsActivity extends AppCompatActivity{
 
     //Creating an array of Friends named friends.
     Friend[] friends = {
-            new Friend("Tyler", "I'm a home schooled vapey boi who loves long walks on Skellige Isle with Geralt of Rivia. 32 Vape Lyfe."),
-            new Friend("Paul", "My hobbies include vaping, eating the food of my people, and stealing handles of other peoples liquor."),
-            new Friend("Luther", "My hobbies include the Python Lyfe, and making these guns look amazing. You see this hair? Stylin' and profilin'!"),
-            new Friend("Brandiboi", "I like swiping right and climbing mountains with the bois. Ramen is life, and you can't keep a good corn dog down. #EverestOneDay"),
-            new Friend("Tara", "I'm a skilled programmer with a lot of self confidence issues who doesn't believe what the bois say when they tell me I am the best programmer."),
+            new Friend("Tyler", "placeholderbio"),
+            new Friend("Paul", "placeholderbio"),
+            new Friend("Luther", "placeholderbio"),
+            new Friend("Brandiboi", "placeholderbio"),
+            new Friend("Tara", "placeholderbio")
     };
 
     @Override
@@ -33,7 +31,22 @@ public class FriendsActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.friends_activity);
 
+        // We had to do this because getString doesn't work outside onCreate()
+        // This is incredibly hacky and replace with better stuff!
+        friends[0].bio = getString(R.string.tyler_bio);
+        friends[1].bio = getString(R.string.paul_bio);
+        friends[2].bio = getString(R.string.luther_bio);
+        friends[3].bio = getString(R.string.brandon_bio);
+        friends[4].bio = getString(R.string.tara_bio);
+        // What a mess
+
+
         mBack = findViewById(R.id.back);
+        mTyler = findViewById(R.id.tyler);
+        mPaul = findViewById(R.id.paul);
+        mLuther = findViewById(R.id.luther);
+        mBrandiboi = findViewById(R.id.brandiboi);
+        mTara = findViewById(R.id.tara);
 
         mBack.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -42,19 +55,54 @@ public class FriendsActivity extends AppCompatActivity{
             }
         });
 
-        mBrandiboi = findViewById(R.id.brandiboi);
-        mBrandiboi.setOnClickListener(new View.OnClickListener() {
+        mTyler.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(FriendsActivity.this, FriendDetailActivity.class);
+                intent.putExtra("name", friends[0].name);
+                intent.putExtra("bio", friends[0].bio);
                 startActivity(intent);
             }
         });
 
-        mTyler = findViewById(R.id.tyler);
-        mPaul = findViewById(R.id.paul);
-        mLuther = findViewById(R.id.luther);
-        mBrandiboi = findViewById(R.id.brandiboi);
-        mTara = findViewById(R.id.tara);
+        mPaul.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(FriendsActivity.this, FriendDetailActivity.class);
+                intent.putExtra("name", friends[1].name);
+                intent.putExtra("bio", friends[1].bio);
+                startActivity(intent);
+            }
+        });
+
+        mLuther.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(FriendsActivity.this, FriendDetailActivity.class);
+                intent.putExtra("name", friends[2].name);
+                intent.putExtra("bio", friends[2].bio);
+                startActivity(intent);
+            }
+        });
+
+        mBrandiboi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(FriendsActivity.this, FriendDetailActivity.class);
+                intent.putExtra("name", friends[3].name);
+                intent.putExtra("bio", friends[3].bio);
+                startActivity(intent);
+            }
+        });
+
+        mTara.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(FriendsActivity.this, FriendDetailActivity.class);
+                intent.putExtra("name", friends[4].name);
+                intent.putExtra("bio", friends[4].bio);
+                startActivity(intent);
+            }
+        });
     }
 }
