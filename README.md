@@ -7,6 +7,11 @@ This lab focuses on creating apps with multiple activites, and passing info
 from one activity to another via Intents. This lab does not involve passing
 data backwards as a result from a started activity back to the first activity.
 
+**DO NOT** use `ListAdapaters`.  **DO NOT** use `RecyleView`. We haven't
+covered these in lecture yet. Hard-code the list of five friends in your
+application. After hard-coding these five you'll appreciate the list solutions
+more in the future.
+
 Build an app with the following:
 
 * A class `Friend` with at least the following properties:
