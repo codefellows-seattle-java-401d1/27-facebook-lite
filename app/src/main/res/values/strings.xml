@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">Friendsapp</string>
+    <string name="app_name">Friends App</string>
+    <string name="friend_name">Friends</string>
+    <string name="bio">Biography</string>
+    <string name="see_more">see more</string>
+    <string name="insta_handle">Instagram Handle</string>
+    <string name="welcome">Welcome to our friend app. \nMeet some of our Instagram friends!</string>
+    <string name="apartment_cats">Ducati and Harley\n\@apartment_cats</string>
+    <string name="see_our_friends">See our friends</string>
+
 </resources>
