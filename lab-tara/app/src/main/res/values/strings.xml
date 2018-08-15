@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">FacebookLite</string>
+    <string name="see_friends">See My Friends</string>
+    <string name="friend_app_intro">Use this app to find out a little more about my friends.</string>
 </resources>
