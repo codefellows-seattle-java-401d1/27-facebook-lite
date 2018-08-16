@@ -1,5 +1,6 @@
 package com.example.a27_facebook_lite;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -29,5 +30,16 @@ public class FriendDetailActivity extends AppCompatActivity {
                 finish();
             }
         });
+
+        //pulled from Paul's repo
+        Intent data = getIntent();
+        data.getStringExtra("name");
+        data.getStringExtra("bio");
+
+        name = findViewById(R.id.name_detail);
+        name.setText(data.getStringExtra("name"));
+
+        name = findViewById(R.id.bio_detail);
+        name.setText(data.getStringExtra("bio"));
     }
 }
