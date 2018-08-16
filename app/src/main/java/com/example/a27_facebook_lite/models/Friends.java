@@ -8,4 +8,5 @@ public class Friends {
         this.name = name;
         this.bio = bio;
     }
+
 }
