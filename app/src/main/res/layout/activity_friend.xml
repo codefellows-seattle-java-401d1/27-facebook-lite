@@ -13,14 +13,15 @@
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="40dp"
+        android:layout_margin="25dp"
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:textSize="22sp"
+            android:textSize="25sp"
+            android:textColor="@color/colorBackground"
             android:layout_marginBottom="15dp"
             android:text="Little Mac Big Tony" />
 
@@ -31,6 +32,7 @@
             android:textColor="@color/colorPrimaryDark"
             android:textSize="25sp"
             android:layout_marginBottom="15dp"
+            android:layout_marginRight="15dp"
             android:layout_weight="1"
             android:text="see more" />
 
@@ -41,36 +43,37 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_margin="40dp"
+        android:layout_margin="25dp"
         app:layout_constraintTop_toBottomOf="@+id/littlemac">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="15dp"
+            android:layout_marginRight="15dp"
             android:layout_weight="1"
             android:text="Tortilla Chulula"
-            android:textSize="22sp" />
+            android:textColor="@color/colorBackground"
+            android:textSize="25sp" />
 
         <Button
             android:id="@+id/friendButton2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="15dp"
+            android:layout_marginRight="15dp"
             android:layout_weight="1"
             android:text="see more"
             android:textColor="@color/colorPrimaryDark"
             android:textSize="25sp" />
-
     </LinearLayout>
-
 
     <LinearLayout
         android:id="@+id/stewie"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_margin="40dp"
+        android:layout_margin="25dp"
         app:layout_constraintTop_toBottomOf="@+id/tortilla">
 
         <TextView
@@ -78,21 +81,78 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="15dp"
             android:layout_weight="1"
+            android:textColor="@color/colorBackground"
             android:text="Stewie Simon"
-            android:textSize="22sp" />
+            android:textSize="25sp" />
 
         <Button
             android:id="@+id/friendButton3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="15dp"
+            android:layout_marginRight="15dp"
             android:layout_weight="1"
             android:text="see more"
             android:textColor="@color/colorPrimaryDark"
             android:textSize="25sp" />
-
     </LinearLayout>
 
+    <LinearLayout
+        android:id="@+id/maple"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="25dp"
+        app:layout_constraintTop_toBottomOf="@+id/stewie">
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1"
+            android:textColor="@color/colorBackground"
+            android:text="Maplekins"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/friendButton4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:text="see more"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/stevie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="25dp"
+        app:layout_constraintTop_toBottomOf="@+id/maple">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1"
+            android:textColor="@color/colorBackground"
+            android:text="Stevie Nicks"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/friendButton5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:text="see more"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="25sp" />
+    </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>

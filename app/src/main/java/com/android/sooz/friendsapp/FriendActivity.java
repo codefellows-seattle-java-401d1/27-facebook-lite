@@ -45,27 +45,27 @@ public class FriendActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_friend);
 
-        Intent intent = getIntent();
+//        Intent intent = getIntent();
+////
+//        button = findViewById(R.id.friendButton1);
 //
-        button = findViewById(R.id.friendButton1);
-
-        showFriends();
+//        showFriends();
 
     }
 
-
-    //creates list of fir
-    public void showFriends(){
-        int currentIndex = 0;
-
-        Friend friend = friends[currentIndex];
-        name.setText(friend.name);
-        bio.setText(friend.bio);
-        instaHandle.setText(friend.instaHandle);
-
-        Drawable pic = getResources().getDrawable(friend.drawableID);
-        picture.setImageDrawable(pic);
-    }
+//
+//    //creates list of fir
+//    public void showFriends(){
+//        int currentIndex = 0;
+//
+//        Friend friend = friends[currentIndex];
+//        name.setText(friend.name);
+//        bio.setText(friend.bio);
+//        instaHandle.setText(friend.instaHandle);
+//
+//        Drawable pic = getResources().getDrawable(friend.drawableID);
+//        picture.setImageDrawable(pic);
+//    }
 
 
 }
