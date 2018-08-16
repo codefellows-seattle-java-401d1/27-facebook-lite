@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/intro_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/intro_msg"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:text="@string/welcome_to_facebook_lite" />
+
+    <TextView
+        android:id="@+id/intro_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/friend_button"
+        app:layout_constraintTop_toBottomOf="@+id/intro_banner"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:text="@string/intro_msg_paragraph" />
+
+    <Button
+        android:id="@+id/friend_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/see_my_friends"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
