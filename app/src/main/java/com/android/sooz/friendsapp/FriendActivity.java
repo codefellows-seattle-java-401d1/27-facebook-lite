@@ -49,6 +49,21 @@ public class FriendActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        mfriendButton1 = findViewById(R.id.friendButton1);
+        mfriendButton1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(FriendActivity.this, FriendDetailActivity.class);
+
+                intent.putExtra(friends[0].drawableID);
+                intent.putExtra(friends[0].instaHandle);
+                intent.putExtra (friends[0].name);
+                intent.putExtra(friends[0].bio);
+
+                startActivity(intent);
+            }
+        });
     }
 }
 

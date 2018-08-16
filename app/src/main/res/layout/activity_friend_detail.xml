@@ -1,34 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
 
-    <!--general application view-->
+<!--general application view-->
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <!--Friend Detail view-->
     <LinearLayout
+        android:id="@+id/container"
         android:orientation="vertical"
-        android:layout_height="match_parent"
-        android:layout_width="match_parent">
-
-        <!--button layout view-->
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            <Button
-                android:id="@+id/prev"
-                android:layout_weight="1"
-                android:text="Previous"
-                android:layout_height="wrap_content"
-                android:layout_width="0sp"/>
-            <Button
-                android:id="@+id/next"
-                android:layout_weight="1"
-                android:text="Next"
-                android:layout_height="wrap_content"
-                android:layout_width="0sp"/>
-
-        </LinearLayout>
-        <!--Object/Project view-->
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
         <ImageView
             android:id="@+id/picture"
             android:layout_width="match_parent"
@@ -37,17 +22,47 @@
             android:id="@+id/name"
             android:text="@string/friend_name"
             android:textSize="30sp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-        <TextView
-            android:id="@+id/bio"
-            android:text="@string/bio"
+            android:textColor="@color/colorBackground"
+            android:layout_marginBottom="15dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
         <TextView
             android:id="@+id/instaHandle"
             android:text="@string/insta_handle"
+            android:textColor="@color/colorBackground"
+            android:textSize="20sp"
+            android:layout_marginBottom="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/bio"
+            android:text="@string/bio"
+            android:textColor="@color/colorBackground"
+            android:textSize="20sp"
+            android:layout_marginBottom="15dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
     </LinearLayout>
-</ScrollView>
+
+    <Button
+        android:id="@+id/backFriendList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15sp"
+        android:layout_weight="1"
+        android:text="@string/back_to_home"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+    <Button
+        android:id="@+id/backToMain"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:padding="15sp"
+        android:layout_weight="1"
+        android:text="@string/back_to_home"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/backFriendList"/>
+
+</android.support.constraint.ConstraintLayout>
