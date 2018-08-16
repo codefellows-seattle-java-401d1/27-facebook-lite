@@ -2,4 +2,6 @@
     <string name="app_name">27-facebook-lite</string>
     <string name="see_my_friends">See My Friends</string>
     <string name="learn_more">Use this app to find out a little more about my friends.</string>
+    <string name="name">name</string>
+    <string name="bio">bio</string>
 </resources>
