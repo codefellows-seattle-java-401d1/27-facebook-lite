@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FriendActivity"
+    android:orientation="vertical">
+
+    <!--Friend 1-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5sp">
+
+        <TextView
+            android:id="@+id/friend1"
+            android:layout_weight="1"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:padding="10sp"
+            android:text="@string/name"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/detailFriend1"
+            android:layout_weight="1"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="details"
+            android:textAlignment="center"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!--Friend 2-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5sp">
+
+        <TextView
+            android:id="@+id/friend2"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1"
+            android:padding="10sp"
+            android:text="@string/name"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/detailFriend2"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:text="details"
+            android:textAlignment="center"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!--Friend 3-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5sp" >
+            <TextView
+                android:id="@+id/friend3"
+                android:layout_weight="1"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/name"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:padding="10sp" />
+
+            <Button
+                android:id="@+id/detailFriend3"
+                android:layout_weight="1"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="details"
+                android:textAlignment="center"
+                android:textSize="16sp" />
+    </LinearLayout>
+
+    <!--Friend 4-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5sp" >
+            <TextView
+                android:id="@+id/friend4"
+                android:layout_weight="1"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/name"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:padding="10sp" />
+
+            <Button
+                android:id="@+id/detailFriend4"
+                android:layout_weight="1"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="details"
+                android:textAlignment="center"
+                android:textSize="16sp" />
+    </LinearLayout>
+
+    <!--Friend 5-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5sp" >
+            <TextView
+                android:id="@+id/friend5"
+                android:layout_weight="1"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/name"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:padding="10sp" />
+
+            <Button
+                android:id="@+id/detailFriend5"
+                android:layout_weight="1"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="details"
+                android:textAlignment="center"
+                android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>
