@@ -4,32 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".FriendsDetailActivity">
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="250sp"
+        android:id="@+id/friendName"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Welcome to the friend app! Enter to see a list of friend and details about them!"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="32dp"
+        android:text="TextView"
+        android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.309" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/enter"
+    <TextView
+        android:id="@+id/bio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="TextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.12" />
-
+        app:layout_constraintTop_toBottomOf="@+id/friendName" />
 </android.support.constraint.ConstraintLayout>
