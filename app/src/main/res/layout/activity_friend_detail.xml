@@ -15,10 +15,13 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-        <ImageView
-            android:id="@+id/picture"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+
+        <!--on hold for now-->
+        <!--<ImageView-->
+            <!--android:id="@+id/picture"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content" />-->
+
         <TextView
             android:id="@+id/name"
             android:text="@string/friend_name"

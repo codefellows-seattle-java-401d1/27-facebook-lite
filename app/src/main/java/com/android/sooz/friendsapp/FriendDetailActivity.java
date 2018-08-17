@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.android.sooz.friendsapp.models.Friend;
 
@@ -15,10 +16,28 @@ public class FriendDetailActivity extends AppCompatActivity {
     private Button backFriendsList;
 
 
+    private TextView name;
+    private TextView bio;
+    private TextView instaHandle;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_friend_detail);
+
+        Intent data = getIntent();
+
+        data.getStringExtra("name");
+        data.getStringExtra("bio");
+        data.getStringExtra("instaHandle");
+
+        name = findViewById(R.id.name);
+        name.setText(data.getStringExtra("name"));
+        bio = findViewById(R.id.bio);
+        bio.setText(data.getStringExtra("bio"));
+        instaHandle = findViewById(R.id.instaHandle);
+        instaHandle.setText(data.getStringExtra("instaHandle"));
 
         backFriendsList = findViewById(R.id.backFriendList);
         backFriendsList.setOnClickListener(new View.OnClickListener() {
@@ -39,18 +58,4 @@ public class FriendDetailActivity extends AppCompatActivity {
         });
 
     }
-
-//    //creates single project page/view within app
-//    public void showFriend(){
-//
-//        //allows user to cycle through friends on a loo
-//
-//        Friend friend = friends[currentIndex];
-//        name.setText(friend.name);
-//        bio.setText(friend.bio);
-//        instaHandle.setText(friend.instaHandle);
-//
-//        Drawable pic = getResources().getDrawable(friend.drawableID);
-//        picture.setImageDrawable(pic);
-//    }
 }
