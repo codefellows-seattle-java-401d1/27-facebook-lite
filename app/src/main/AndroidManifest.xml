@@ -17,6 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".FriendsActivity"></activity>
+        <activity android:name=".FriendDetailActivity"></activity>
     </application>
 
 </manifest>

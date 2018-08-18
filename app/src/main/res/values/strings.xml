@@ -11,6 +11,11 @@
     <string name="nick">Nick</string>
     <string name="tara">Tara</string>
     <string name="jean">Jean</string>
+    <string name="placeholder">placeholder</string>
 
-
+    <string name="paul_bio">I love getting drunk</string>
+    <string name="tyler_bio">I love Paul and Nintendo Switch</string>
+    <string name="nick_bio">Better red than dead</string>
+    <string name="tara_bio">I\'m a certified badass</string>
+    <string name="jean_bio">I keep Brandon from falling to his death</string>
 </resources>
