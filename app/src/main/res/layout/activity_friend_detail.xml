@@ -7,14 +7,14 @@
     android:orientation="vertical"
     android:layout_height="match_parent"
     android:layout_width="match_parent"
-    android:layout_margin="10dp">
+    android:layout_margin="10sp">
 
     <!--Friend Detail view-->
     <LinearLayout
         android:id="@+id/container"
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
         <!--on hold for now-->
         <!--<ImageView-->
@@ -52,21 +52,19 @@
         android:id="@+id/backFriendList"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="15sp"
-        android:layout_weight="1"
+        android:padding="25sp"
         android:text="@string/return_to_friends_list"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="25sp"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        app:layout_constraintBottom_toTopOf="@+id/backToMain"/>
     <Button
         android:id="@+id/backToMain"
         android:layout_width="match_parent"
-        android:layout_height="0sp"
-        android:padding="15sp"
-        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:padding="25sp"
         android:text="@string/back_to_home"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="25sp"
-        app:layout_constraintBottom_toTopOf="@+id/backFriendList"/>
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
 </android.support.constraint.ConstraintLayout>

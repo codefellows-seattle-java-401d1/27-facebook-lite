@@ -52,10 +52,11 @@ public class FriendActivity extends AppCompatActivity {
 
         //friend 1
 
-        name = findViewById(R.id.name);
         Friend friend1 = friends[0];
 
-        Log.d("friend1","Hi my name is "+friend1.name+".");
+        //use to test routing by looking for this in log cat when button is clicked
+        //keeping in for testing
+        //Log.d("friend1","Hi my name is "+ friend1.name +".");
 
         mfriendChoice = findViewById(R.id.friendButton1);
 
@@ -71,21 +72,31 @@ public class FriendActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        //friend 2
+
+        Friend friend2 = friends[1];
+
+        //use to test routing by looking for this in log cat when button is clicked
+        //keeping in for testing
+        //Log.d("friend2","Hi my name is "+ friend2.name +".");
+
+        mfriendChoice = findViewById(R.id.friendButton2);
+
+        mfriendChoice.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(FriendActivity.this, FriendDetailActivity.class);
+
+                intent.putExtra("name", friends[1].name);
+                intent.putExtra("bio", friends[1].bio);
+                intent.putExtra("instaHandle", friends[1].instaHandle);
+
+                startActivity(intent);
+            }
+        });
     }
 }
 
-//
-//    //creates list of fir
-//    public void showFriends(){
-//        int currentIndex = 0;
-//
-//        Friend friend = friends[currentIndex];
-//        name.setText(friend.name);
-//        bio.setText(friend.bio);
-//        instaHandle.setText(friend.instaHandle);
-//
-//        Drawable pic = getResources().getDrawable(friend.drawableID);
-//        picture.setImageDrawable(pic);
-//    }
 
 
