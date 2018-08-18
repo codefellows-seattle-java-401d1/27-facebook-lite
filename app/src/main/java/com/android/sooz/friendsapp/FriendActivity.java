@@ -52,7 +52,7 @@ public class FriendActivity extends AppCompatActivity {
 
         //friend 1
 
-        Friend friend1 = friends[0];
+//        Friend friend1 = friends[0];
 
         //use to test routing by looking for this in log cat when button is clicked
         //keeping in for testing
@@ -75,14 +75,7 @@ public class FriendActivity extends AppCompatActivity {
 
         //friend 2
 
-        Friend friend2 = friends[1];
-
-        //use to test routing by looking for this in log cat when button is clicked
-        //keeping in for testing
-        //Log.d("friend2","Hi my name is "+ friend2.name +".");
-
         mfriendChoice = findViewById(R.id.friendButton2);
-
         mfriendChoice.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -91,6 +84,54 @@ public class FriendActivity extends AppCompatActivity {
                 intent.putExtra("name", friends[1].name);
                 intent.putExtra("bio", friends[1].bio);
                 intent.putExtra("instaHandle", friends[1].instaHandle);
+
+                startActivity(intent);
+            }
+        });
+
+        //friend 3
+
+        mfriendChoice = findViewById(R.id.friendButton3);
+        mfriendChoice.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(FriendActivity.this, FriendDetailActivity.class);
+
+                intent.putExtra("name", friends[2].name);
+                intent.putExtra("bio", friends[2].bio);
+                intent.putExtra("instaHandle", friends[2].instaHandle);
+
+                startActivity(intent);
+            }
+        });
+
+        //friend 4
+
+        mfriendChoice = findViewById(R.id.friendButton4);
+        mfriendChoice.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(FriendActivity.this, FriendDetailActivity.class);
+
+                intent.putExtra("name", friends[3].name);
+                intent.putExtra("bio", friends[3].bio);
+                intent.putExtra("instaHandle", friends[3].instaHandle);
+
+                startActivity(intent);
+            }
+        });
+
+        //friend 5
+
+        mfriendChoice = findViewById(R.id.friendButton5);
+        mfriendChoice.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(FriendActivity.this, FriendDetailActivity.class);
+
+                intent.putExtra("name", friends[4].name);
+                intent.putExtra("bio", friends[4].bio);
+                intent.putExtra("instaHandle", friends[4].instaHandle);
 
                 startActivity(intent);
             }
