@@ -1,55 +1,54 @@
-# ![CF](http://i.imgur.com/7v5ASc8.png) Friend List and Detail Views
+#Friend App
 
-## Resources  
-* [Putting Data in Intents](https://developer.android.com/guide/components/intents-filters.html)
+##Overview
+This application is a proof of life project to learn more about multiple activity apps, passing/using Intent, layout and design of Android applications in Android Studio.
 
-This lab focuses on creating apps with multiple activites, and passing info
-from one activity to another via Intents. This lab does not involve passing
-data backwards as a result from a started activity back to the first activity.
+This app shows the five of the "friends" of my cats' Instagram account, @apartment_cats
 
-**DO NOT** use `ListAdapaters`.  **DO NOT** use `RecyleView`. We haven't
-covered these in lecture yet. Hard-code the list of five friends in your
-application. After hard-coding these five you'll appreciate the list solutions
-more in the future.
+##Screenshots
 
-Build an app with the following:
+**Internal Editor View**
 
-* A class `Friend` with at least the following properties:
-  * A public String `name` property for their name
-  * A public String `bio` property for a short description of them
-* `MainActivity`
-  * A `TextView` with a short intro explaining what your app is about, like
-    "use this app to find out a little more about my friends."
-  * A `Button` that says "See My Friends"
-* `FriendsActivity`
-  * Includes a hard-coded array with five of your friends.
-  * Only show the friends name.
-  * Do not show the friends bio.
-  * A `Button` for each friend that says "More" and launches the
-    `FriendDetailActivity`
-  * Use an `Intent` to launch the second activity
-  * Put an `extra` on the intent with the friend's name.
-  * Put an `extra` on the intent with the friend's short bio.
-  * Do not try to pass the entire `Friend` object through as an extra on an
-    intent. Intents are good at passing primitive values. It requires more work
-    to pass our own custom classes.
-* `FriendDetailActivity`
-  * Use a `ConstraintView` as the main outer layout
-  * Have a large bold `TextView` showing your friend's name.
-  * Have a smaller paragraph under the name showing your friend's short bio
-  * Have a `Button` constrained to the bottom of the page that says "Back"
-  * Have the "Back" button `finish()` the activity without setting a result
-    to pass information back to the activity.
-  
-## Stretch Goals
-Include a picture for each of your friends. Add a `int` id so your hard-coded
-array can reference a Drawable. Show the each friend's picture when you view
-their detail page.
+[Main View](screenshots/mainview_screenshot.png)
 
-## Submission Instructions
-* Work in a fork of this repository
-* Work in a branch on your fork
-* Write all of your code in a directory named `lab-` + `<your name>` **e.g.** `lab-susan`
-* Open a pull request to this repository
-* Submit on canvas a question and observation, how long you spent, and a link to
-  your pull request
+[Friend List View](screenshots/friendlistview_screenshot.png)
+
+[Friend Detail View 1](/Users/sooz/codefellows/401Java/Labs/27-facebook-lite/screenshots/firstdetailview_screenshot.png)
+
+[Friend Detail View 2](/Users/sooz/codefellows/401Java/Labs/27-facebook-lite/screenshots/seconddetailview_screenshot.png)
+
+
+**External View**
+
+[Main View](https://github.com/FavoredFortune/27-facebook-lite/blob/master/screenshots/mainview_screenshot.png)
+
+[Friend List View](shttps://github.com/FavoredFortune/27-facebook-lite/blob/master/screenshots/friendlistview_screenshot.png)
+
+[Friend Detail View 1](https://github.com/FavoredFortune/27-facebook-lite/blob/master/screenshots/firstdetailview_screenshot.png)
+
+[Friend Detail View 2](https://github.com/FavoredFortune/27-facebook-lite/blob/master/screenshots/seconddetailview_screenshot.png)
+
+##Credits/Resources
+
+__Thanks to:__
+
+- Instructor Steve Geluso
+- TAs: Casey Cady, Molly Kent, Darcy MacCabe
+- Ahmed Ossan for whiteboarding the problem with me in wireframe/format
+
+  [wireframe](screenshots/wireframe_ahmed_sooz.jpeg)
+
+  ![wireframe](https://github.com/FavoredFortune/27-facebook-lite/blob/master/screenshots/wireframe_ahmed_sooz.jpeg)
+
+
+
+
+__Resources__
+
+- Main Activity image view help from [StackOverflow](https://stackoverflow.com/questions/28113484/how-do-i-insert-an-image-in-an-activity-with-android-studio)
+
+- Setting text color in activity view from [StackOverflow](https://stackoverflow.com/questions/4499208/android-setting-text-view-color-from-java-code)
+
+- Changing default color themes from [StackOverflow](https://stackoverflow.com/questions/9593133/how-to-change-default-text-color-using-custom-theme)
+
+- Setting global background color from [StackOverflow](https://stackoverflow.com/questions/39531635/how-to-set-global-application-background-color)
