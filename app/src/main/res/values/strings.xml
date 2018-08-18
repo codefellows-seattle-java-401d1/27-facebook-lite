@@ -1,6 +1,16 @@
 <resources>
-    <string name="app_name">27-facebook-lite</string>
+    <string name="app_name">Facebook Lite</string>
     <string name="see_my_friends">See my Friends</string>
     <string name="welcome_to_facebook_lite">Welcome to Facebook Lite</string>
     <string name="intro_msg_paragraph">For when you just want to see your friends and not a bunch of fake news or cat videos with ad\'s halfway through them.</string>
+    <string name="go_back">Go back</string>
+    <string name="friend">Friend</string>
+    <string name="more">More</string>
+    <string name="paul">Paul</string>
+    <string name="tyler">Tyler</string>
+    <string name="nick">Nick</string>
+    <string name="tara">Tara</string>
+    <string name="jean">Jean</string>
+
+
 </resources>
