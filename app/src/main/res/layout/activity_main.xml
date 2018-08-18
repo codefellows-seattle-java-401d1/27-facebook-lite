@@ -7,44 +7,47 @@
     android:layout_width="match_parent"
     android:layout_margin="10sp">
 
-    <!--text layout view-->
-    <!--Got some help from StackOverflow to figure out how to show image-->
-    <!--https://stackoverflow.com/questions/28113484/how-do-i-insert-an-image-in-an-activity-with-android-studio-->
-    <ImageView
+    <LinearLayout
+        android:id="@+id/container"
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:src="@drawable/apartment_cats"
-        android:layout_marginBottom="20sp"
-        android:layout_marginTop="15sp"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/apartment_cats"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/welcome"
-        android:textSize="30sp"
-        android:paddingTop="40sp"/>
+        android:layout_height="wrap_content">
 
-        <LinearLayout
-            android:orientation="horizontal"
+        <!--text layout view-->
+        <!--Got some help from StackOverflow to figure out how to show image-->
+        <!--https://stackoverflow.com/questions/28113484/how-do-i-insert-an-image-in-an-activity-with-android-studio-->
+        <ImageView
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            <!--Click to new view view-->
-            <Button
-                android:id="@+id/goToFriends"
-                android:layout_width="0sp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="40sp"
-                android:layout_weight="1"
-                android:text="see our friends"
-                android:textColor="@color/colorPrimaryDark"
-                android:textSize="24sp" />
+            android:layout_height="wrap_content"
+            android:src="@drawable/apartment_cats"
+            android:layout_marginBottom="20sp"
+            android:layout_marginTop="15sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBackground"
+            android:text="@string/apartment_cats"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome"
+            android:textColor="@color/colorBackground"
+            android:textSize="30sp"
+            android:paddingTop="40sp"/>
 
-        </LinearLayout>
+    </LinearLayout>
+        <!--Click to new view-->
+    <Button
+        android:id="@+id/goToFriends"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="25sp"
+        android:text="@string/back_to_home"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
 </LinearLayout>
