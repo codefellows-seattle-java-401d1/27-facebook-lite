@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/friend_1">
+
+        <TextView
+            android:layout_weight="7"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="@string/paul"
+            android:textAlignment="center" />
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/friend_1_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/more" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/friend_1"
+        android:id="@+id/friend_2">
+
+        <TextView
+            android:layout_weight="7"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="@string/tyler"
+            android:textAlignment="center" />
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/friend_2_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/more" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/friend_2"
+        android:id="@+id/friend_3">
+
+        <TextView
+            android:layout_weight="7"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="@string/nick"
+            android:textAlignment="center" />
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/friend_3_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/more" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/friend_3"
+        android:id="@+id/friend_4">
+
+        <TextView
+            android:layout_weight="7"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="@string/tara"
+            android:textAlignment="center" />
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/friend_4_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/more" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/friend_4"
+        android:id="@+id/friend_5">
+
+        <TextView
+            android:layout_weight="7"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="@string/jean"
+            android:textAlignment="center" />
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/friend_5_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/more" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/go_back_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="@string/go_back" />
+
+</android.support.constraint.ConstraintLayout>
