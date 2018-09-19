@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">FriendList</string>
+    <string name="Julius">Julius</string>
+    <string name="Augustus">Augustus</string>
+    <string name="Tiberius">Tiberius</string>
+    <string name="Nero">Nero</string>
+    <string name="Justinian">Justinian</string>
+    <string name="name">name</string>
+    <string name="bio">bio</string>
+</resources>
